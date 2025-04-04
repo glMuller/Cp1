@@ -35,7 +35,7 @@ public class Main {
             despesa.gastoComInternet = gastoComInternet;
             despesa.valorMensalidadeAcademia = valorMensalidadeAcademia;
             //exibindo os valores e resultados
-            System.out.printf("renda bruta familiar: R$ %.3f \nGasto da conta de luz: %.3f \nGasto da conta de Água: %.3f \nGasto com conta de Internet %.3f \nRenda familiar líquida: %.3f \nGasto com a mensalidade da academia: %.3f", despesa.rendaFamiliar, despesa.gastoComLuz, despesa.gastoComAgua, despesa.gastoComInternet, despesa.calcularRendaFamiliarLiquida(), despesa.valorMensalidadeAcademia);
+            System.out.printf("renda bruta familiar: R$ %.3f \nGasto da conta de luz: %.3f \nGasto da conta de Água: %.3f \nGasto com conta de Internet %.3f \nGasto com a mensalidade da academia: %.3f \nRenda familiar líquida: %.3f", despesa.rendaFamiliar, despesa.gastoComLuz, despesa.gastoComAgua, despesa.gastoComInternet, despesa.valorMensalidadeAcademia, despesa.calcularRendaFamiliarLiquida());
         } catch (Exception e) {
             System.out.println("Formato de número incorreto");
             throw new RuntimeException(e);

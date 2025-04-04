@@ -16,8 +16,7 @@ public class DespesaFamiliar {
         return (numeroDeMoradores * valorMensalidadeAcademia) + gastoComAgua + gastoComInternet + gastoComLuz;
     }
     public double calcularRendaFamiliarLiquida(){
-        double gastoTotal = calcularTotalDespesas();
-        double rendafamiliarLiquida = rendaFamiliar - gastoTotal;
+        double rendafamiliarLiquida = rendaFamiliar - calcularTotalDespesas();
         return rendafamiliarLiquida;
     }
 }
